@@ -1,4 +1,4 @@
 +++
 +++
 
-Hi! Welcome to Hook! Hook is a Zola theme.
+Hi, i'm cscnk52,a student.
