@@ -9,9 +9,10 @@ build_search_index = false
 
 generate_feeds = true
 feed_filenames = ["rss.xml"]
+default_language = "zh-cn"
 
-title = "Hook"
-description = "Hook is a theme for Zola"
+title = "cscnk52"
+description = "Hi, i'm cscnk52, a student."
 
 theme = "hook"
 
