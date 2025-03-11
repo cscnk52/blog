@@ -6,7 +6,7 @@ taxonomies.categories = ["tech"]
 taxonomies.tags = ["Windows", "Scoop"]
 +++
 
-如果你用过 [Ubuntu](https://ubuntu.com/)、[Deepin](https://www.deepin.org/)、[Kali Linux](https://www.kali.org/) 或是 [Raspberry Pi OS](https://www.raspberrypi.com/software/) 等基于 Debian 的 Linux 系统，一定不会对 apt 感到陌生，[apt](https://deb.wiki/apt_usage/)（Advanced Packaging Tool）是一个在 Debian 及其衍生发行版中的 Shell 前端软件包管理器，使用 apt 快速地安装、管理、卸载软件，是非常自然且优雅的一件事情，不用去思考这个软件包到底 C 盘还是 D 盘，不用去担心这个软件包的依赖关系，不用去担心这个软件包的卸载是否会影响到其他软件包，这一切都是由 apt 来帮你处理的；而 Mac OS 上也有 Homebrew 这样的软件帮助你来快速、简洁、高效地管理软件。
+如果你用过 [Ubuntu](https://ubuntu.com/)、[Deepin](https://www.deepin.org/)、[Kali Linux](https://www.kali.org/) 或是 [Raspberry Pi OS](https://www.raspberrypi.com/software/) 等基于 Debian 的 Linux 系统，一定不会对 apt 感到陌生，[apt](https://deb.wiki/apt_usage/)（Advanced Packaging Tool）是一个在 [Debian](https://www.debian.org/) 及其衍生发行版中的 Shell 前端软件包管理器，使用 apt 快速地安装、管理、卸载软件，是非常自然且优雅的一件事情，不用去思考这个软件包到底 C 盘还是 D 盘，不用去担心这个软件包的依赖关系，不用去担心这个软件包的卸载是否会影响到其他软件包，这一切都是由 apt 来帮你处理的；而 Mac OS 上也有 [Homebrew](https://brew.sh/) 这样的软件帮助你来快速、简洁、高效地管理软件。
 
 可再将目光转向 Windows 系统，要下载一个软件，你需要：
 
@@ -58,15 +58,15 @@ taxonomies.tags = ["Windows", "Scoop"]
 
 除表格中列出的功能优势外，其他软件管理器的部分缺点也是我选择 Scoop 的因素：
 
-1. Microsoft Store：只能安装 Store 中的软件，且部分软件是通过运行 exe 的方式安装的，会污染系统
-2. Chocolatey：依然会污染系统
+1. Microsoft Store：只能安装 Store 中的软件，且部分软件是通过运行 exe 的方式安装的，会污染系统，只推荐通过 Store 安装 UWP 软件
+2. Chocolatey：依然会污染系统，并且商业化过于严重，整体设计理念也不如 Scoop 清爽
 3. Winget：是微软官方出品，但是功能较为简单，不支持回滚版本，不支持锁定版本，还是会污染系统
 
 ## Scoop 的安装与使用
 
 ### 安装
 
-在安装之前，建议做一些准备工作：
+在安装之前，建议做一些准备工作，这些都是可选的，但是会提升你的 Scoop 使用体验：
 
 #### 设置安装位置
 
@@ -95,7 +95,7 @@ fsutil.exe file setCaseSensitiveInfo $env:SCOOP enable
 fsutil.exe file setCaseSensitiveInfo $env:SCOOP_GLOBAL enable
 ```
 
-我曾经就遇到过某个 python 包因为大小写不敏感而导致的问题，这个命令可以避免这种问题，不过由于大部分情况下不会遇到此问题，所以这个命令不是必须的。
+我曾经就遇到过某个 Python 包因为大小写不敏感而导致的问题，这个命令可以避免这种问题，不过由于大部分软件正确适配了 Windows 大小写问题，大多数情况下不会遇到此问题
 
 ### 设置杀毒软件白名单
 
@@ -113,6 +113,8 @@ fsutil.exe file setCaseSensitiveInfo $env:SCOOP_GLOBAL enable
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
+
+现在 Scoop 就已经安装好了，你可以开始使用了！
 
 ### 使用
 
@@ -138,11 +140,11 @@ bucket 是 Scoop 的软件仓库，类似于 Linux 下的软件源，Scoop 会�
 
 推荐安装的 bucket：
 
-- main: 包含许多常用的命令行软件
-- extras: 包含许多常用的图形界面软件
-- versions: 包含许多软件的历史版本
-- dorado: 包含许多官方库中没有包含的软件
-- cetacea：由我维护的 bucket，作为其他 bucket 的补充
+- [Main](https://github.com/ScoopInstaller/Main): 包含许多常用的命令行软件
+- [extras](https://github.com/ScoopInstaller/Extras): 包含许多常用的图形界面软件
+- [Versions](https://github.com/ScoopInstaller/Versions): 包含许多软件的历史版本
+- [dorado](https://github.com/chawyehsu/dorado): 包含许多官方库中没有包含的软件
+- [cetacea](https://github.com/cscnk52/cetacea): 由我维护的 bucket，作为其他 bucket 的补充
 
 你可以使用以下命令来添加这些 bucket：
 
@@ -190,6 +192,57 @@ scoop cache rm <app>               # 移除应用缓存
 scoop cache rm -a                  # 移除所有缓存
 scoop cleanup <app>                # 删除旧版本
 ```
+
+## Scoop 的缺点
+
+### 极慢的搜索速度
+
+因为 Scoop 是通过搜索本地 json 文件的形式去搜索软件的，但是因为 Scoop 软件个数的急速增长，这种搜索方式已经是非常慢的了，在某些条件下，搜索一个软件需要大约半分钟，这对于一个搜索功能来说是非常慢的，不过 Scoop 社区也在努力改善这部分的体验：
+
+#### Scoop-search
+
+[Scoop-search](https://github.com/shilangyu/scoop-search)，是一个 `scoop search` 命令的代替产品，它使用了更快的搜索引擎，可以大大提高搜索速度，你可以通过以下命令来安装：
+
+```powershell
+scoop install scoop-search
+```
+
+通过对比原命令和 scoop-search 的速度，可以看出 scoop-search 的速度要快很多：
+
+```sh
+❯ hyperfine --warmup 1 'scoop-search google' 'scoop search google'
+Benchmark 1: scoop-search google
+  Time (mean ± σ):      60.3 ms ±   3.5 ms    [User: 91.2 ms, System: 394.2 ms]
+  Range (min … max):    55.1 ms …  73.8 ms    49 runs
+
+Benchmark 2: scoop search google
+  Time (mean ± σ):     21.275 s ±  2.657 s    [User: 9.604 s, System: 11.789 s]
+  Range (min … max):   19.143 s … 27.035 s    10 runs
+
+Summary
+  scoop-search google ran
+  352.74 ± 48.49 times faster than scoop search google
+```
+
+同时，在 Windows 上为众多软件提供 GUI 的 [UniGetUI](https://github.com/marticliment/UnigetUI)，也默认要求安装 scoop-search 来提升搜索速度。
+
+#### 使用 SQLite 的本地搜索
+
+在 Scoop [v0.5.0](https://github.com/ScoopInstaller/Scoop/releases/tag/v0.5.0) 中，Scoop 引入了 SQLite 数据库，用于加速搜索，你可以通过以下命令来初始化 SQLite 数据库：
+
+```powershell
+scoop config use_sqlite_cache true
+```
+
+等待数据库初始化完成之后，你便可以享受飞快的搜索速度了。
+
+但是，当前的 SQLite 数据库并不会删除已经弃用的 json 数据，比如曾经安装过却卸载了的 bucket 或是已经被弃用的 manifest 文件，当前并没有一个很好的解决办法，你可以通过手动删除 Scoop 目录下的 `scoop.db` 文件，再重新初始化数据库来暂时解决这个问题。
+
+### 社区活跃度不高
+
+Scoop 的社区活跃度很差，我开始使用 Scoop 大概是 22 年 12 月，当时 11 月刚刚发布完 v0.3.1，之后每次运行 `scoop update` 时，我都没有看到 `Updating scoop` 下有任何 scoop 的更新，直到 24 年 4 月，中间隔了整整 17 月才迎来了 v0.4.0 的更新。
+
+[Scoop Installer](https://github.com/ScoopInstaller) 的 GitHub 组织成员也大多不再参与管理 Scoop 的相关事务，最开始我给 Scoop 贡献包的时候，经常需要一个 PR 等好多天才会被合并，后来我便慢慢开始自行维护属于自己的库，这也是我创建了 [cetacea](https://github.com/cscnk52/cetacea) 这个 bucket 的原因。而我也是在刚刚才正式合并了我在六个月前提交的 [PR](https://github.com/ScoopInstaller/Versions/pull/1918)，以后也应该不会再为 Scoop 贡献包了，转而维护自己的 bucket。
 
 ## Reference
 
