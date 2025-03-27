@@ -1,7 +1,6 @@
 +++
 title = "Windows 上的 apt：Scoop 使用简明指南"
 date = 2025-03-06T09:17:36Z
-author = "cscnk52"
 taxonomies.categories = ["tech"]
 taxonomies.tags = ["Windows", "Scoop"]
 +++

@@ -16,6 +16,8 @@ description = "Hi, i'm cscnk52, a student."
 
 theme = "hook"
 
+author = "cscnk52"
+
 taxonomies = [
     { name = "categories" },
     { name = "tags" },
