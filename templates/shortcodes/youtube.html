@@ -1,0 +1,32 @@
+{#
+  用法：
+  {{ youtube(id="4JjSyITsyIs") }}
+  {{ youtube(id="4JjSyITsyIs", controls="0", start="60", ratio="4:3") }}
+#}
+
+{% set ratio_raw = ratio | default(value="16:9") %}
+
+{% if ratio_raw == "16:9" %}
+  {% set padding = "56.25%" %}
+{% elif ratio_raw == "4:3" %}
+  {% set padding = "75%" %}
+{% elif ratio_raw == "21:9" %}
+  {% set padding = "42.85%" %}
+{% elif ratio_raw == "1:1" %}
+  {% set padding = "100%" %}
+{% else %}
+  {# 支持用户传入 "65%" 这样的百分比字符串 #}
+  {% set padding = ratio_raw %}
+{% endif %}
+
+<div style="position: relative; padding-bottom: {{ padding }}; height: 0; overflow: hidden;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/{{ id }}?controls={{ controls | default(value="1") }}{% if start %}&start={{ start }}{% endif %}"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
