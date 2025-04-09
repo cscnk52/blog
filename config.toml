@@ -43,7 +43,7 @@ sections = [
 blog_section_path = "/posts"
 
 force_theme = false
-back_link_text = "Back"
+back_link_text = ""
 
 footer = true
 footer_copyright = "© 2025 cscnk52"
