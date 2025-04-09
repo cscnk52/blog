@@ -9,7 +9,7 @@ taxonomies.tags = ["Podcast", "不在场","Bon Iver","Justin Vernon"]
 本文是对 [S1E10 冬天好](https://buzaichang.xyz/episodes/Bon-Iver) 的文字版转录，由 cscnk52 转录修订。
 {% end %}
 
-逃避本身不是答案，退缩之后的自我勘探需要更大的勇气。2006年的冬天，Justin Vernon 穿过精神的荒原，寻到一个小镇。
+逃避本身不是答案，退缩之后的自我勘探需要更大的勇气。2006 年的冬天，Justin Vernon 穿过精神的荒原，寻到一个小镇。
 
 ![cover](/assets/posts/bon-iver/bon-iver-cover.jpg)
 
@@ -51,7 +51,7 @@ Bon Iver 的故事简单极了，就是一句话来概括：就是一个平凡�
 
 除了这些之外呢，他在一个破旧的电视上没完没了的重复看一摞 DVD。这是一个 1992 年的美剧，叫做[《Northern Exposure》](https://en.wikipedia.org/wiki/Northern_Exposure)——[《北国风云》](https://movie.douban.com/subject/1907212/)。我觉得这中文翻译，我不知道是这个……创建这个豆瓣词条的人故意反讽还是怎么着。因为这个电视剧实际是一个格局小到不能再小的一个剧，而且它是一个[dramatic](https://en.wikipedia.org/wiki/Comedy_drama)。就所谓 dramatic 就是 comedy 和 drama 中间状态的一种剧。大概是那种笑中带泪的感觉，或者说是也不是很好笑，但是有点忍俊不禁那样的感觉。
 
-然后这个剧的故事从任何意义上都谈不上“风云”这俩字儿。我觉得比较准确的翻译是北国家常，对，他讲的就是一个雄心壮志的纽约名校毕业的医学博士被分配工作到Alaska 的一个地图找都找不着的一个小镇，当这个全科医生，就是自己就是这小镇唯一的医生。当然这个男主角就是非常不甘心了，然后他也看不起这里土掉渣的这个乡村生活，因为他可是地道的纽……纽约客，对吧？但是阴差阳错，他渐渐融入了这个北方边陲的朴素而真诚的小社会里，并且生活了下去，结交了很多朋友。这就是这样的一个电视剧的故事的走向，具体内容就是每天他在这个小镇上的鸡毛蒜皮。
+然后这个剧的故事从任何意义上都谈不上“风云”这俩字儿。我觉得比较准确的翻译是北国家常，对，他讲的就是一个雄心壮志的纽约名校毕业的医学博士被分配工作到 Alaska 的一个地图找都找不着的一个小镇，当这个全科医生，就是自己就是这小镇唯一的医生。当然这个男主角就是非常不甘心了，然后他也看不起这里土掉渣的这个乡村生活，因为他可是地道的纽……纽约客，对吧？但是阴差阳错，他渐渐融入了这个北方边陲的朴素而真诚的小社会里，并且生活了下去，结交了很多朋友。这就是这样的一个电视剧的故事的走向，具体内容就是每天他在这个小镇上的鸡毛蒜皮。
 
 这个剧对 Justin Vernon 影响有多大呢？就直到去年他上 rick rubin 的 [播客访谈](https://www.pushkin.fm/podcasts/broken-record/bon-ivers-past-and-present)，他还是会这么说。他说《Northern Exposure》是他的 `favorite thing`，无论是小说、电影、电视剧、戏剧，是一切，就在一切媒介中他的最爱。
 
@@ -240,5 +240,7 @@ Justin Vernon 脱离了 99.9% 的 singer song writer 们深陷其中一辈子都
 ---
 
 [^1]: 此处自发行专辑有两个小版本，分别为 [纸板封套版本](https://www.discogs.com/release/1619072-Bon-Iver-For-Emma-Forever-Ago) 和 [手写封面版本](https://www.discogs.com/release/11155352-Bon-Iver-For-Emma-Forever-Ago)，前者是大多数媒体提到的，后者则是提交给唱片公司的版本。
-[^2]: My Old Kentucky Blog 是最初（Jun 1, 2007）推荐的 blogger. [原文链接(存档于互联网档案馆)](https://web.archive.org/web/20151126060857/http://www.myoldkentuckyblog.com/?p=1598)
+
+[^2]: My Old Kentucky Blog 是最初（Jun 1, 2007）推荐的 blogger. [原文链接 (存档于互联网档案馆)](https://web.archive.org/web/20151126060857/http://www.myoldkentuckyblog.com/?p=1598)
+
 [^3]: Show Notes 中有误，此处应为 DeYarmond Edison - We.
