@@ -179,7 +179,7 @@ Bon Iver 说自己是这方面受到了很多大师的影响，其中最典型�
 
 而在 Justin 的想象里，它有了前缀之后，这个场景变成了男人说 `"For every life"`，然后马上被女人打断，女人说`"Forgo the parable"`。这个时候`"Forgo the parable"` 的意思就变成了，你不要跟我这儿赋比兴了行吗？不要跟我兜圈子了别扯了。对，然后这个男人的话没有说完，实际上男人的话是下一句，他想说的是 `"For every life, seek the light"`，寻找光亮。所以整个这歌是充满歧义的表达，充满分歧的理解。就在他的乐迷的留言中，你可以看出所有经典文艺作品的共同的特点，就是他们都能引发千人千面的感受，而每一种都是特别真切而且特别融洽的。
 
-而另外有趣的是一个八卦，就是这里面的 Emma 确实是真人。有一个真人，就是她不是那个 Justin Vernon 在他人生跌入谷底的时候跟他分手的那个女朋友。那个女朋友叫 Christy。这个 Emma 是 Justin Vernon 的高中同学，叫做 [Sara Emma Jensen](https://www.youtube.com/watch?v=_UcwfNPotwM)。他是他们高中乐队的那个 Mount Vernon 乐队的其中一个管乐手，是一个其貌不扬的一个金发妹子，既会吹长笛也会吹萨克。高中的时候他俩曾经短暂的交往过一段时间。
+而另外有趣的是一个八卦，就是这里面的 Emma 确实是真人。有一个真人，就是她不是那个 Justin Vernon 在他人生跌入谷底的时候跟他分手的那个女朋友。那个女朋友叫 Christy。这个 Emma 是 Justin Vernon 的高中同学，叫做 Sara Emma Jensen [^4]。他是他们高中乐队的那个 Mount Vernon 乐队的其中一个管乐手，是一个其貌不扬的一个金发妹子，既会吹长笛也会吹萨克。高中的时候他俩曾经短暂的交往过一段时间。
 
 关于这故事就是 2017 年的那个《For Emma, Forever ago》十周年的再版唱片。里面就是 Bon Iver 的一个乐队成员，也是 Justin 发小，他的一个中学同学写了一篇热泪盈眶的 [长文](https://www.reddit.com/r/boniver/comments/7y8be2/heres_the_excerpt_from_trevor_hagen_in_the_10/) 附在这个专辑里面，也涉及到了这段中学的这个时光的很多事儿，说了很多他来龙去脉。但是更重要的是作为一个和 Justin 一起长大的人，他作为一个在场者，就是他对于《For Emma, Forever ago》这些歌的理解是什么样的？
 
@@ -244,3 +244,5 @@ Justin Vernon 脱离了 99.9% 的 singer song writer 们深陷其中一辈子都
 [^2]: My Old Kentucky Blog 是最初（Jun 1, 2007）推荐的 blogger. [原文链接 (存档于互联网档案馆)](https://web.archive.org/web/20151126060857/http://www.myoldkentuckyblog.com/?p=1598)
 
 [^3]: Show Notes 中有误，此处应为 DeYarmond Edison - We.
+
+[^4]: 在这个当地电视台对 Mount Vernon 的 [采访](https://www.youtube.com/watch?v=_UcwfNPotwM) 中，有 16 岁的 Justin 和 Emma（那个金发管乐手）
