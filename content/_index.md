@@ -23,7 +23,6 @@ recent_more_text = "more »"
 comment = false
 date_format = "%b %-d, %Y"
 
-
 +++
 
 Hi, i'm cscnk52.
