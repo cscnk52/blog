@@ -1,0 +1,23 @@
+repos:
+  - repo: local
+    hooks:
+      - id: autocorrect
+        name: autocorrect
+        description: Auto-fix text content with autocorrect.
+        entry: autocorrect
+        language: system
+        args: ["--fix"]
+
+      - id: prettier
+        name: prettier
+        description: Format files with prettier.
+        entry: npx prettier
+        language: system
+        args: ["--write", "."]
+
+      - id: taplo
+        name: taplo
+        description: Format files with taplo.
+        entry: taplo fmt
+        language: system
+        args: ["--"]
