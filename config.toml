@@ -25,6 +25,7 @@ highlight_themes_css = [
 ]
 
 lazy_async_image = true
+render_emoji = true
 
 [slugify]
 paths = "on"
@@ -38,6 +39,7 @@ anchors = "on"
 sections = [
   { name = "posts", path = "/posts", is_external = false },
   { name = "tags", path = "/tags", is_external = false },
+  { name = "tools", path = "/tools", is_external = false },
   { name = "about", path = "/about", is_external = false },
 ]
 blog_section_path = "/posts"
