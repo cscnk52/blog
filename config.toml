@@ -9,7 +9,7 @@ build_search_index = false
 taxonomies = [{ name = "tags" }, { name = "categories" }]
 
 title = "cscnk52"
-description = "the blog of cscnk52"
+description = "feedId:153317034890686464+userId:41700557798798336"
 author = "cscnk52"
 
 generate_feeds = true
