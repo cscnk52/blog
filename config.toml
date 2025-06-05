@@ -13,7 +13,6 @@ description = "the blog of cscnk52"
 author = "cscnk52"
 
 generate_feeds = true
-feed_filenames = ["rss.xml"]
 
 [markdown]
 highlight_code = true
