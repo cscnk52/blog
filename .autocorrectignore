@@ -1,5 +1,1 @@
-highlight_themes/
-public/
-static/
-templates/
-themes/
+.prettierignore
