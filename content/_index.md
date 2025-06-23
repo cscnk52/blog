@@ -26,3 +26,5 @@ date_format = "%b %-d, %Y"
 +++
 
 Hi, i'm cscnk52.
+
+![](/icon/Written-By-a-Human-Not-By-AI-Badge-black.svg)
