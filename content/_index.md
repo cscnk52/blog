@@ -16,7 +16,7 @@ links = [
   { name = "RSS", icon = "rss", url = "/atom.xml" },
 ]
 
-recent = false
+recent = true
 recent_max = 5
 recent_more_text = "more »"
 
