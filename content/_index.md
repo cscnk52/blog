@@ -13,7 +13,7 @@ links = [
   { name = "GitHub", icon = "github", url = "https://github.com/cscnk52" },
   # { name = "Twitter", icon = "twitter", url = "https://twitter.com/<your-username>" },
   { name = "Email", icon = "email", url = "mailto:cscnk52@outlook.com" },
-  { name = "RSS", icon = "rss", url = "/rss.xml" },
+  { name = "RSS", icon = "rss", url = "/atom.xml" },
 ]
 
 recent = false
